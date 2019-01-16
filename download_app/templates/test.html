@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Test</title>
+        <script src="https://js.pusher.com/4.3/pusher.min.js"></script>
+        <script>
+                var pusher = new Pusher('d8672e8e8ba4f85cd510', {
+                    cluster: 'ap2'
+                    });
+                var channel = pusher.subscribe('download_channel');
+                channel.bind('download_event', function(data) {
+                    alert(data.files_path);
+                    console.log(data.files_path);
+                    for( i in data.files_path){
+                        console.log(i)
+                        //window.open(i)
+                    }
+                });
+        </script>
+    </head>
+</html>
