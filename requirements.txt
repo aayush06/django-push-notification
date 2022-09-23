@@ -29,7 +29,7 @@ Markdown==2.6.11
 MarkupSafe==1.0
 ndg-httpsclient==0.5.1
 oauth2client==3.0.0
-protobuf==3.6.1
+protobuf==3.18.3
 pusher==2.1.2
 py-vapid==1.4.0
 pyasn1==0.4.5
